@@ -1,0 +1,9 @@
+/app/*
+/node_modules/*
+/.bowerrc
+/gulpfile.js
+/package.json
+/package-lock.json
+/dist/favicon/*
+/dist/fonts/*
+/dist/img/*
