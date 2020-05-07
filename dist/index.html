@@ -41,10 +41,10 @@
 			<div  class="main__fly-elements fly-elements" aria-hidden="true">
 				<span class="fly-elements__item fly-elements__item--top-element-1">{ }</span>
 				<span class="fly-elements__item fly-elements__item--top-element-2">#</span>
-				<span class="fly-elements__item fly-elements__item--top-element-3">&lt/&gt</span>
-				<span class="fly-elements__item fly-elements__item--top-element-4">&ltdiv&gt</span>
-				<span class="fly-elements__item fly-elements__item--top-element-5">&ltdiv&gt</span>
-				<span class="fly-elements__item fly-elements__item--top-element-6">&lt/&gt</span>
+				<span class="fly-elements__item fly-elements__item--top-element-3">&lt;/&gt;</span>
+				<span class="fly-elements__item fly-elements__item--top-element-4">&lt;div&gt;</span>
+				<span class="fly-elements__item fly-elements__item--top-element-5">&lt;div&gt;</span>
+				<span class="fly-elements__item fly-elements__item--top-element-6">&lt;/&gt;</span>
 			</div>
 			<div class="about-me__text-container fixed-container">
 				<h1 class="about-me__name">Руслан Ахметшин</h1>
@@ -99,22 +99,42 @@
 				<button aria-label="Предыдущий слайд" class="examples__arrow examples__arrow--left" name="previous"></button>
 				<button aria-label="Следующий слайд" class="examples__arrow examples__arrow--right" name="next"></button>
 				<div class="examples__pagination paginator" aria-hidden="true"></div>
-				<button type="submit" aria-label="Заказать проект" class="examples__link-project-order button button--orange-style" name="project-order">Заказать проект</button>
+				<button type="button" aria-label="Заказать проект" class="examples__link-project-order button button--orange-style" name="project-order">Заказать проект</button>
 			</div>
 		</section>
 		<section class="main__offer offer" id="offer">
 			<div class="offer__fixed-container fixed-container">
-				<p class="offer__bid">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</p>
+				<h2 class="offer__bid">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
 				<p class="offer__terms">*Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
 			</div>
 			<div class="offer__fly-elements">
 				<span class="offer__fly-elements-item offer__fly-elements-element-1">{ }</span>
 				<span class="offer__fly-elements-item offer__fly-elements-element-2">#</span>
-				<span class="offer__fly-elements-item offer__fly-elements-element-3">&ltdiv&gt</span>
-				<span class="offer__fly-elements-item offer__fly-elements-element-4">&lt/&gt</span>
+				<span class="offer__fly-elements-item offer__fly-elements-element-3">&lt;div&gt;</span>
+				<span class="offer__fly-elements-item offer__fly-elements-element-4">&lt;/&gt;</span>
 				<span class="offer__fly-elements-item offer__fly-elements-element-5">{ }</span>
 			</div>
 		</section>
+		<div class="contact-form">
+			<form action="#" method="post" class="contact-form__form">
+				<h2 class="contact-form--hide-elements contact-form__headers contact-form__headers--call-order">Заказать звонок</h2>
+				<h2 class="contact-form__headers contact-form__headers--feedback">Обратная связь</h2><hr>
+				<label class="contact-form__labels">* Ваше имя:
+					<input class="contact-form__input contact-form__input--name" type="text" name="name">
+				</label>
+				<label class="contact-form__labels">* Ваш телефон:
+					<input class="contact-form__input contact-form__input--phone" type="tel" name="phone">
+				</label>
+				<label class="contact-form__labels contact-form__labels--email">* Электронная почта:
+					<input class="contact-form__input contact-form__input--email" type="email" name="email">
+				</label>
+				<label class="contact-form__labels">Интересующий вопрос:
+					<textarea class="contact-form__question" name="question"></textarea>
+				</label>
+				<button type="submit" class="contact-form__button contact-form__button--call" aria-label="Отправить заявку" name="submit">Подтвердить</button>
+				<button type="button" class="contact-form__button contact-form__button--cancel" aria-label="Отказаться от отправки заявки" name="cancel">Отмена</button>
+			</form>
+		</div>
 	</main>
 	<footer class="footer">
 		<div class="footer__fixed-container fixed-container">

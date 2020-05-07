@@ -15,6 +15,24 @@ $(function() {
 	if ($(window).width() < 639) {
 		$('.footer__call-order').addClass('button--orange-style');
 	}
+
+  $('html').on('click','.button--call-order', function() {
+      $('.contact-form').css('display','block');
+      $('.contact-form__form').css('height','525px');
+      $('.contact-form__headers--feedback').css('display','none');
+      $('.contact-form__headers--call-order').css('display','block');
+      $('.contact-form__labels--email').css('display','none');
+  });
+  $('html').on('click','.examples__link-project-order', function() {
+      $('.contact-form').css('display','block');
+      $('.contact-form__form').css('height','600px');
+      $('.contact-form__headers--feedback').css('display','block');
+      $('.contact-form__headers--call-order').css('display','none');
+      $('.contact-form__labels--email').css('display','block');
+  });
+  $('html').on('click','.contact-form__button--cancel', function() {
+      $('.contact-form').css('display','none');
+  });
 });
 
 new Swiper('.examples__slides', {

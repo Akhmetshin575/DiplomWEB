@@ -258,7 +258,7 @@ figcaption {
 }
 .fly-elements__item--top-element-1:hover {
   transform: translate(50px) rotate(735deg) !important;
-  transition:transform 0 ease-in 3s;
+  transition:transform 3s ease-in 0s;
 }
 .fly-elements--active .fly-elements__item--top-element-1 {
   transform-origin: left 0;
@@ -269,7 +269,7 @@ figcaption {
 }
 .fly-elements__item--top-element-2:active {
   transform: translate(700px, 0) !important;
-  transition:transform 0 ease-in 3s;
+  transition:transform 3s ease-in 0s;
 }
 .fly-elements--active .fly-elements__item--top-element-2 {
   transition-duration: 3s;
@@ -280,7 +280,7 @@ figcaption {
 }
 .fly-elements__item--top-element-3:hover {
   transform: translate(150px, 550px) rotate(-10deg) scale(2) !important;
-  transition:transform 0 ease-in 2s;
+  transition:transform 2s ease-in 0s;
 }
 .fly-elements--active .fly-elements__item--top-element-3 {
   transition-duration: 2s;
@@ -291,7 +291,7 @@ figcaption {
 }
 .fly-elements__item--top-element-4:active {
   transform: translate(560px, 20px) rotate(-3610deg) !important;
-  transition:transform 0 ease-in 3s;
+  transition:transform 3s ease-in 0s;
 }
 .fly-elements--active .fly-elements__item--top-element-4 {
   transform: translate(560px, 20px) rotate(-10deg);
@@ -301,7 +301,7 @@ figcaption {
 }
 .fly-elements__item--top-element-5:hover {
   transform: translate(640px, 450px) rotate(-3960deg) !important;
-  transition:transform 0 ease-in 3s;
+  transition:transform 3s ease-in 0s;
 }
 .fly-elements--active .fly-elements__item--top-element-5 {
   transform: translate(640px, 450px) rotate(20deg);
@@ -313,7 +313,7 @@ figcaption {
 }
 .fly-elements__item--top-element-6:hover {
   transform: rotate(-3960deg) !important;
-  transition:transform 0 ease-in 3s;
+  transition:transform 3s ease-in 0s;
 }
 
 .about-me {
@@ -641,6 +641,79 @@ figcaption {
 }
 
 
+.contact-form {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  background-color: grey;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-form__form {
+  position: fixed;
+  z-index: 5;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 450px;
+  padding: 20px;
+  background-color: #f5f5dc;
+}
+.contact-form__headers {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.contact-form__labels {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.contact-form__input {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: black !important;
+  background-color: #f9f9f9;
+  border: 1px solid grey;
+}
+.contact-form__question {
+  display: block;
+  width: 100%;
+  height: 180px;
+  font-size: 16px;
+  color: black !important;
+  background-color: #f9f9f9;
+  border: 1px solid grey;
+  resize: none;
+}
+.contact-form__button {
+  position: relative;
+  top: 20px;
+  width: 49%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.contact-form__button--call {
+  left: 0;
+  background-color: #ff4e2e;
+  color: white;
+}
+.contact-form__button--cancel {
+  right: -5px;
+  background-color: grey;
+  color: black;
+}
+
+
 @media(max-width: 1400px) {
   .fly-elements--active .fly-elements__item--top-element-2 {
     transform: translate(100px, 180px) rotate(1455deg);
@@ -650,14 +723,14 @@ figcaption {
   }
   .fly-elements__item--top-element-4:active {
     transform: translate(490px, 20px) rotate(-3610deg) !important;
-    transition:transform 0 ease-in 3s;
+    transition:transform 3s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-4 {
     transform: translate(490px, 20px) rotate(-10deg);
   }
   .fly-elements__item--top-element-5:hover {
     transform: translate(560px, 450px) rotate(-3960deg) !important;
-    transition:transform 0 ease-in 3s;
+    transition:transform 3s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-5 {
     transform: translate(560px, 450px) rotate(20deg);
@@ -673,7 +746,7 @@ figcaption {
 @media(max-width: 1205px) {
   .fly-elements__item--top-element-5:hover {
     transform: translate(400px, 450px) rotate(-3960deg) !important;
-    transition:transform 0 ease-in 3s;
+    transition:transform 3s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-5 {
     transform: translate(400px, 450px) rotate(20deg);
@@ -710,7 +783,7 @@ figcaption {
   }
   .fly-elements__item--top-element-3:hover {
     transform: translate(290px, 515px) rotate(-10deg) scale(2) !important;
-    transition:transform 0 ease-in 2s;
+    transition:transform 2s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-3 {
     transition-duration: 2s;
@@ -718,7 +791,7 @@ figcaption {
   }
   .fly-elements__item--top-element-4:active {
     transform: translate(700px, 20px) rotate(-3610deg) !important;
-    transition:transform 0 ease-in 3s;
+    transition:transform 3s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-4 {
     transform: translate(700px, 20px) rotate(-20deg);
@@ -790,7 +863,7 @@ figcaption {
   }
   .fly-elements__item--top-element-3:hover {
     transform: translate(640px, 15px) rotate(-3610deg) scale(1.5) !important;
-    transition:transform 0 ease-in 2s;
+    transition:transform 2s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-3 {
     transition-duration: 2s;
@@ -801,7 +874,7 @@ figcaption {
   }
   .fly-elements__item--top-element-5:hover {
     transform: translate(750px, 50px) rotate(-3960deg) !important;
-    transition:transform 0 ease-in 3s;
+    transition:transform 3s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-5 {
     display: inline-block !important;
@@ -870,7 +943,7 @@ figcaption {
 @media(max-width: 710px) {
   .fly-elements__item--top-element-3:hover {
     transform: translate(540px, 15px) rotate(-3610deg) scale(1.5) !important;
-    transition:transform 0 ease-in 2s;
+    transition:transform 2s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-3 {
     transition-duration: 2s;
@@ -891,7 +964,7 @@ figcaption {
   }
   .fly-elements__item--top-element-3:hover {
     transform: translate(540px, 15px) rotate(-3610deg) scale(1.5) !important;
-    transition:transform 0 ease-in 2s;
+    transition:transform 2s ease-in 0s;
   }
   .fly-elements--active .fly-elements__item--top-element-3 {
     left: -50px;
@@ -1055,15 +1128,15 @@ figcaption {
   .offer__fly-elements-element-4 {
     display: none;
   }
-
   .button--orange-style {
     font-size: 16px;
   }
-}
-
-@media(max-width: 470px) {
   .fly-elements__item--top-element-3 {
     left: -45% !important;
+  }
+  .contact-form__form {
+    width: 300px;
+    padding: 10px;
   }
 }
 
