@@ -40,6 +40,7 @@
 }
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
@@ -78,6 +79,9 @@ figure {
 figcaption {
   display: block;
 }
+address {
+  font-style: normal;
+}
 
 .fixed-container {
   display: flex;
@@ -104,18 +108,24 @@ figcaption {
 .menu__item--footer:not(:last-child) {
   margin-bottom: 15px;
 }
-.menu__link:hover,:focus {
+.menu__link:hover, .phone__link:hover, .footer__contact:hover {
   position: relative;
   color: #fc557c;
   outline: none;
 }
-.menu__link:hover::after {
+.menu__link:active, .phone__link:active, .footer__contact:active {
+  color: blue;
+}
+.menu__link:hover::after, .phone__link:hover::after {
   content: '';
   border-bottom: 1px solid #fc557c;
   position: absolute;
   top: 20px;
   left: 0;
   right: 0;
+}
+.menu__link:active::after, .phone__link:active::after {
+  border-bottom: 1px solid blue;
 }
 .menu__link--footer {
   color: #8993ad;
@@ -134,6 +144,12 @@ figcaption {
   background-color: transparent;
   cursor: cell;
 }
+.button--call-order:hover {
+  background-color: lightyellow;
+}
+.button--call-order:focus, .examples__link-project-order:focus {
+  box-shadow: 0 0 5px 1px blue;
+}
 .button--orange-style {
   width: 270px;
   height: 60px;
@@ -143,6 +159,12 @@ figcaption {
   cursor: pointer;
   font-size: 18px;
   margin: 0;
+}
+.button--orange-style:active {
+  box-shadow: 0 0 5px 5px red;
+}
+.button--orange-style:hover {
+  background-color: blue;
 }
 .button__icon.fa {
   display: none;
@@ -199,6 +221,7 @@ figcaption {
   background-size: contain;
   width: 20px;
   height: 16px;
+  outline: none;
 }
 .header__toggle--cross-icon {
   background: transparent url('../img/icons/close.png') center no-repeat;
@@ -441,8 +464,21 @@ figcaption {
 .examples__my-work {
   flex-shrink: 0;
 }
+.examples__screenshot:hover {
+  border: 1px solid red;
+}
+.examples__screenshot:active {
+  border: 2px solid blue;
+}
 .examples__description {
   margin-top: 20px;
+}
+.examples__description:hover {
+  color: red;
+}
+.examples__description:active {
+  color: blue;
+  font-weight: bold;
 }
 .examples__link-project-order {
   margin: 25px auto 0;
@@ -461,7 +497,10 @@ figcaption {
   outline: none;
 }
 .examples__arrow:active {
-  background-color: cyan;
+  border: 1px solid orange;
+}
+.examples__arrow:hover {
+  background-color: lightgrey;
 }
 .examples__arrow--left {
   left: -5px;
@@ -488,6 +527,7 @@ figcaption {
   height: 20px;
   border-radius: 50%;
   background-color: grey;
+  outline: none;
 }
 .paginator__item:not(:last-child) {
   margin-right: 10px;
@@ -623,6 +663,12 @@ figcaption {
   background-image: url('../img/icons/sprite.png');
   background-repeat: no-repeat;
 }
+.social-networks__link:hover {
+  border-bottom: 2px solid red;
+}
+.social-networks__link:active {
+  opacity: 0.5;
+}
 .social-networks__link--facebook-link {
   background-position: -53px center;
 }
@@ -634,7 +680,7 @@ figcaption {
 }
 .footer__bar-bottom {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 30px 0 35px;
   text-align: center;
   background-color: #31293c;
@@ -664,6 +710,9 @@ figcaption {
   padding: 20px;
   background-color: #f5f5dc;
 }
+.error {
+  background-color: pink !important;
+}
 .contact-form__headers {
   text-align: center;
   margin: 0;
@@ -680,7 +729,7 @@ figcaption {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
-  color: black !important;
+  color: black;
   background-color: #f9f9f9;
   border: 1px solid grey;
 }
@@ -707,10 +756,16 @@ figcaption {
   background-color: #ff4e2e;
   color: white;
 }
+.contact-form__button--call:active {
+  background-color: green;
+}
 .contact-form__button--cancel {
   right: -5px;
   background-color: grey;
   color: black;
+}
+.contact-form__button--cancel:active {
+  background-color: red;
 }
 
 
@@ -1086,6 +1141,10 @@ figcaption {
 
   .button__icon.fa {
     display: inline-block;
+  }
+  .button--call-order:focus {
+    box-shadow: none;
+    outline: none;
   }
 }
 

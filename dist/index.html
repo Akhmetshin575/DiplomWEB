@@ -16,6 +16,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js" defer></script>
 </head>
 <body>
@@ -24,12 +25,12 @@
 			<button type="button" class="header__toggle" aria-label="Открыть меню" name="header__toggle"></button>
 			<nav class="header__menu menu">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#my-skills" class="menu__link">Услуги</a></li>
-					<li class="menu__item"><a href="#examples" class="menu__link">Портфолио</a></li>
-					<li class="menu__item"><a href="#offer" class="menu__link">Стоимость</a></li>
+					<li class="menu__item"><a href="#my-skills" class="menu__link menu__link--header">Услуги</a></li>
+					<li class="menu__item"><a href="#examples" class="menu__link menu__link--header">Портфолио</a></li>
+					<li class="menu__item"><a href="#offer" class="menu__link menu__link--header">Стоимость</a></li>
 				</ul>
 			</nav>
-			<a class="header__phone" href="tel:+79872835292">+7 (987) 283-52-92</a>
+			<address class="header__phone"><a href="tel:+79872835292" class="phone__link">+7 (987) 283-52-92</a></address>
 			<button type="button" class="header__order button button--call-order" aria-label="Заказать звонок" name="call-order">
 				Заказать звонок
 				<i class="button__icon fa fa-phone" id="phone" aria-hidden="true"></i>
@@ -46,23 +47,25 @@
 				<span class="fly-elements__item fly-elements__item--top-element-5">&lt;div&gt;</span>
 				<span class="fly-elements__item fly-elements__item--top-element-6">&lt;/&gt;</span>
 			</div>
-			<div class="about-me__text-container fixed-container">
+			<address class="about-me__text-container fixed-container">
 				<h1 class="about-me__name">Руслан Ахметшин</h1>
 				<p class="about-me__specialization">Frontend-разработчик и&nbsp;веб-верстальщик</p>
 				<a class="about-me__link-learn-more button button--orange-style" href="#my-skills" aria-label="Узнать больше">Узнать больше</a>
-			</div>
-			<div class="about-me__picture">
+			</address>
+			<address class="about-me__picture">
 				<img src="img/i.png" class="about-me__photo" alt="Мое фото">
-			</div>
+			</address>
 		</section>
 		<section class="main__my-skills fixed-container my-skills my-skills--fixed-container" id="my-skills">
 			<h2 class="my-skills__h2 h2">Что я&nbsp;делаю</h2>
-			<ul class="my-skills__list">
-				<li class="my-skills__item my-skills__item--first-skill">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</li>
-				<li class="my-skills__item my-skills__item--second-skill">Адаптивная вёрстка под все устройства и&nbsp;браузеры</li>
-				<li class="my-skills__item my-skills__item--third-skill">Frontend-разработка и&nbsp;программирование</li>
-				<li class="my-skills__item my-skills__item--fourth-skill">Исправление и&nbsp;доработка существующей вёрстки</li>
-			</ul>
+			<address>
+				<ul class="my-skills__list">
+					<li class="my-skills__item my-skills__item--first-skill">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</li>
+					<li class="my-skills__item my-skills__item--second-skill">Адаптивная вёрстка под все устройства и&nbsp;браузеры</li>
+					<li class="my-skills__item my-skills__item--third-skill">Frontend-разработка и&nbsp;программирование</li>
+					<li class="my-skills__item my-skills__item--fourth-skill">Исправление и&nbsp;доработка существующей вёрстки</li>
+				</ul>
+			</address>
 			<a aria-label="Узнать стоимость" class="my-skills__link-get-price button button--orange-style" href="#offer">Узнать стоимость</a>
 		</section>
 		<section class="main__examples examples" id="examples">
@@ -116,7 +119,7 @@
 			</div>
 		</section>
 		<div class="contact-form">
-			<form action="#" method="post" class="contact-form__form">
+			<form action="https://echo.htmlacademy.ru/" method="post" class="contact-form__form">
 				<h2 class="contact-form--hide-elements contact-form__headers contact-form__headers--call-order">Заказать звонок</h2>
 				<h2 class="contact-form__headers contact-form__headers--feedback">Обратная связь</h2><hr>
 				<label class="contact-form__labels">* Ваше имя:
@@ -125,7 +128,7 @@
 				<label class="contact-form__labels">* Ваш телефон:
 					<input class="contact-form__input contact-form__input--phone" type="tel" name="phone">
 				</label>
-				<label class="contact-form__labels contact-form__labels--email">* Электронная почта:
+				<label class="contact-form__labels contact-form__labels--email">Электронная почта:
 					<input class="contact-form__input contact-form__input--email" type="email" name="email">
 				</label>
 				<label class="contact-form__labels">Интересующий вопрос:
@@ -145,21 +148,23 @@
 					<li class="menu__item menu__item--footer"><a href="#offer" class="menu__link menu__link--footer">Стоимость</a></li>
 				</ul>
 			</nav>
-			<div class="footer__contacts">
+			<address class="footer__contacts">
 				<a href="tel:+79872835292" class="footer__contact"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+7 (987) 283-52-92</a>
 				<a href="mailto:184346@mail.ru" class="footer__contact"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;184346@mail.ru</a>
-			</div>
+			</address>
 			<div class="footer__call-order-and-links">
 				<button type="submit" class="footer__call-order button button--call-order" aria-label="Заказать звонок" name="call-order">Заказать звонок</button>
-				<ul class="footer__social-networks ulres social-networks">
-					<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--VK" aria-label="Переход на страницу в ВКонтакте"></a></li>
-					<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--facebook-link" aria-label="Переход на страницу в Фейсбук"></a></li>
-					<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--twitter-link" aria-label="Переход на страницу в Твиттер"></a></li>
-					<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--instagram-link" aria-label="Переход на страницу в Инстаграм"></a></li>
-				</ul>
+				<address>
+					<ul class="footer__social-networks ulres social-networks">
+						<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--VK" aria-label="Переход на страницу в ВКонтакте"></a></li>
+						<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--facebook-link" aria-label="Переход на страницу в Фейсбук"></a></li>
+						<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--twitter-link" aria-label="Переход на страницу в Твиттер"></a></li>
+						<li class="social-networks__item"><a href="#" class="social-networks__link social-networks__link--instagram-link" aria-label="Переход на страницу в Инстаграм"></a></li>
+					</ul>
+				</address>
 			</div>
 		</div>
-		<p class="footer__bar-bottom">&copy;&nbsp;Руслан Ахметшин, 2017-2020</p>
+		<p class="footer__bar-bottom"><small>&copy;&nbsp;Руслан Ахметшин, 2017-2020</small></p>
 	</footer>
 </body>
 </html>
