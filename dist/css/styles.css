@@ -767,6 +767,25 @@ address {
 .contact-form__button--cancel:active {
   background-color: red;
 }
+.contact-form__sending {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: green;
+  font-size: 30px;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 4;
+  width: 450px;
+  height: 200px;
+  padding: 65px 0;
+  background-color: #f5f5dc;
+}
 
 
 @media(max-width: 1400px) {
@@ -1196,6 +1215,10 @@ address {
   .contact-form__form {
     width: 300px;
     padding: 10px;
+  }
+  .contact-form__sending {
+    width: 300px;
+    font-size: 25px;
   }
 }
 

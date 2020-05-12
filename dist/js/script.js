@@ -1,4 +1,9 @@
 $(function() {
+
+  function closeForm() {
+      $('.contact-form').fadeOut();
+    }
+
 	$('.fly-elements').addClass('fly-elements--active');
 
 
@@ -31,7 +36,10 @@ $(function() {
         $form.attr("action"),
         $form.serialize()
     );
-    $('.contact-form').fadeOut();
+
+    $('.contact-form__form').fadeOut();
+
+    setTimeout (closeForm, 2000);
 
     return false;
   });
@@ -75,6 +83,7 @@ $(function() {
 
   $('html').on('click','.button--call-order', function() {
       $('.contact-form').css('display','block');
+      $('.contact-form__form').css('display','block');
       $('.contact-form__form').css('height','525px');
       $('.contact-form__headers--feedback').css('display','none');
       $('.contact-form__headers--call-order').css('display','block');
@@ -82,6 +91,7 @@ $(function() {
   });
   $('html').on('click','.examples__link-project-order', function() {
       $('.contact-form').css('display','block');
+      $('.contact-form__form').css('display','block');
       $('.contact-form__form').css('height','600px');
       $('.contact-form__headers--feedback').css('display','block');
       $('.contact-form__headers--call-order').css('display','none');
