@@ -6,6 +6,7 @@
   src: local('Roboto'), local('Roboto-Regular'),
        url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
 }
 /* roboto-italic - latin_cyrillic */
 @font-face {
@@ -15,6 +16,7 @@
   src: local('Roboto Italic'), local('Roboto-Italic'),
        url('../fonts/roboto-v20-latin_cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/roboto-v20-latin_cyrillic-italic.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
@@ -24,6 +26,7 @@
   src: local('Roboto Bold'), local('Roboto-Bold'),
        url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
 }
 /* roboto-700italic - latin_cyrillic */
 @font-face {
@@ -33,6 +36,7 @@
   src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
        url('../fonts/roboto-v20-latin_cyrillic-700italic.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/roboto-v20-latin_cyrillic-700italic.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
 }
 
 *, *::after, *::before {
@@ -145,7 +149,9 @@ address {
   cursor: cell;
 }
 .button--call-order:hover {
-  background-color: lightyellow;
+  border-radius: 20px;
+  outline: none;
+  font-weight: bold;
 }
 .button--call-order:focus, .examples__link-project-order:focus {
   box-shadow: 0 0 5px 1px blue;
@@ -217,14 +223,14 @@ address {
 .header__toggle {
   display: none;
   border: none;
-  background: transparent url('../img/icons/burger.png') center no-repeat;
+  background: transparent url('../img/icons/burger.webp') center no-repeat;
   background-size: contain;
   width: 20px;
   height: 16px;
   outline: none;
 }
 .header__toggle--cross-icon {
-  background: transparent url('../img/icons/close.png') center no-repeat;
+  background: transparent url('../img/icons/close.webp') center no-repeat;
 }
 
 .header__menu--active {
@@ -388,7 +394,7 @@ address {
   width: 70%;
   height: 145%;
   margin: 0;
-  background: url('../img/figure-background.png') center no-repeat;
+  background: url('../img/figure-background.webp') center no-repeat;
   background-size: contain;
 }
 .about-me__photo {
@@ -493,7 +499,7 @@ address {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 10px 0 grey;
-  background-image: url('../img/icons/arrow.png');
+  background-image: url('../img/icons/arrow.webp');
   outline: none;
 }
 .examples__arrow:active {
@@ -660,7 +666,7 @@ address {
   width: 35px;
   height: 35px;
   margin: 0;
-  background-image: url('../img/icons/sprite.png');
+  background-image: url('../img/icons/sprite.webp');
   background-repeat: no-repeat;
 }
 .social-networks__link:hover {

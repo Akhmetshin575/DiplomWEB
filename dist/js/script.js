@@ -1,11 +1,14 @@
 $(function() {
 
+  $('.fly-elements').addClass('fly-elements--active');
+
+  if ($(window).width() < 639) {
+    $('.footer__call-order').addClass('button--orange-style');
+  }
+
   function closeForm() {
       $('.contact-form').fadeOut();
     }
-
-	$('.fly-elements').addClass('fly-elements--active');
-
 
   $('.contact-form__input--phone').mask('+7 (999) 999-99-99');
 
@@ -74,11 +77,6 @@ $(function() {
 			$('.footer').toggleClass('footer--deactive');
 		}
 	});
-
-
-	if ($(window).width() < 639) {
-		$('.footer__call-order').addClass('button--orange-style');
-	}
 
 
   $('html').on('click','.button--call-order', function() {
